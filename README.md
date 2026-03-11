@@ -23,26 +23,4 @@ El sistema adapta su "cerebro" (System Instructions, parámetros de análisis y 
 *   **Motor de IA:** Google Gen AI SDK (`@google/genai`) utilizando el modelo `gemini-2.0-pro-exp-02-05`
 *   **Persistencia:** Gestión de estado global con elevación en `App.tsx` para mantener el contexto al navegar entre módulos.
 
-## 🚀 Instalación y Uso Local
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd lexcorporativo
-    ```
-2.  **Instalar dependencias:**
-    ```bash
-    npm install
-    ```
-3.  **Configurar Variables de Entorno:**
-    Crea un archivo `.env.local` en la raíz del proyecto y añade tu API Key de Gemini:
-    ```env
-    GEMINI_API_KEY=tu_api_key_aqui
-    ```
-4.  **Iniciar el servidor de desarrollo:**
-    ```bash
-    npm run dev
-    ```
-
----
 *Construido para la excelencia técnica, la seguridad jurídica y la optimización del ejercicio profesional en México.*
