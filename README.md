@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ⚖️ LexCorporativo | Suite Multi-Dominio LegalTech
 
-# Run and deploy your AI Studio app
+LexCorporativo es una plataforma de inteligencia jurídica de alto nivel diseñada específicamente para el entorno legal mexicano. Impulsado por **Gemini 2.0 Pro Exp**, el sistema opera con una arquitectura *Multi-Tenant* que le permite funcionar como tres sistemas expertos independientes bajo una sola interfaz.
 
-This contains everything you need to run your app locally.
+## 🏛️ Módulos de Especialidad
 
-View your app in AI Studio: https://ai.studio/apps/drive/130sOPdQcUcPRSO2tNXsdnv9rEe2VSW-L
+El sistema adapta su "cerebro" (System Instructions, parámetros de análisis y plantillas) en tiempo real según el módulo seleccionado:
 
-## Run Locally
+1. 🏢 **LexMercantil:** Especializado en LGSM, Código de Comercio, gobierno corporativo, asambleas, fusiones y contratos mercantiles complejos.
+2. 💰 **LexiFiscal:** Enfocado en la defensa tributaria (CFF, ISR, IVA), análisis de materialidad, atención a requerimientos y litigio ante el SAT/TFJA.
+3. 🌐 **LexiComercio:** Dominio en Ley Aduanera, T-MEC, Incoterms 2020, pedimentos, NOMs y Reglas de Carácter General en Comercio Exterior.
 
-**Prerequisites:**  Node.js
+## ✨ Capacidades Principales (Core Features)
 
+*   💬 **Asesoría Técnica Experta:** Chat contextual segmentado por módulo. Utiliza razonamiento profundo (`ThinkingLevel.HIGH`) y búsqueda web en tiempo real (Grounding) para fundamentar sus respuestas en la legislación mexicana vigente y jurisprudencia de la SCJN.
+*   📄 **Auditoría Documental Integral:** Motor capaz de analizar expedientes enteros (PDFs o imágenes) y generar un dictamen técnico con un puntaje de riesgo, cruzando hallazgos entre pilares dinámicos (Ej. en Fiscal: Cumplimiento, Materialidad y Defensa).
+*   ✍️ **Ingeniería Jurídica:** Generador automatizado de instrumentos legales. Ofrece plantillas preconfiguradas que cambian según el dominio activo (desde un NDA hasta un Recurso de Revocación o un Contrato de Transporte Internacional).
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Stack Tecnológico
+
+*   **Frontend:** React 19, TypeScript, Vite
+*   **Estilos & UI:** Tailwind CSS v4, Lucide React, Motion (Animaciones)
+*   **Motor de IA:** Google Gen AI SDK (`@google/genai`) utilizando el modelo `gemini-2.0-pro-exp-02-05`
+*   **Persistencia:** Gestión de estado global con elevación en `App.tsx` para mantener el contexto al navegar entre módulos.
+
+## 🚀 Instalación y Uso Local
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    cd lexcorporativo
+    ```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+3.  **Configurar Variables de Entorno:**
+    Crea un archivo `.env.local` en la raíz del proyecto y añade tu API Key de Gemini:
+    ```env
+    GEMINI_API_KEY=tu_api_key_aqui
+    ```
+4.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+---
+*Construido para la excelencia técnica, la seguridad jurídica y la optimización del ejercicio profesional en México.*
