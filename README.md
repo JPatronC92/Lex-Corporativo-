@@ -1,6 +1,6 @@
 # ⚖️ LexCorporativo | Suite Multi-Dominio LegalTech
 
-LexCorporativo es una plataforma de inteligencia jurídica de alto nivel diseñada específicamente para el entorno legal mexicano. Impulsado por **Gemini 2.0 Pro Exp**, el sistema opera con una arquitectura *Multi-Tenant* que le permite funcionar como tres sistemas expertos independientes bajo una sola interfaz.
+LexCorporativo es una plataforma de inteligencia jurídica de alto nivel diseñada específicamente para el entorno legal mexicano. Impulsada por inteligencia artificial, el sistema opera con una arquitectura *Multi-Tenant* que le permite funcionar como tres sistemas expertos independientes bajo una sola interfaz.
 
 ## 🏛️ Módulos de Especialidad
 
